@@ -1,3 +1,54 @@
-body {
+* {
+    box-sizing: border-box;
     font-family: 'Open Sans';
+    margin: 0;
+    padding: 0;
+    color: #ecf0f1;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: #27ae60;
+}
+
+.header{
+    display: table;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+.header > * {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+nav ul, nav li {
+    display: inline;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    padding: 15px 15px;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    color: #434343;
+    border-radius: 25px;
+    background-color: transparent;
+}
+.titre-site{
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
 }

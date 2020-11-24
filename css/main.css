@@ -17,6 +17,9 @@ section {
 }
 
 .grille {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #70BBE0;
     margin-left: auto;
     margin-right: auto;
     display: grid;
@@ -29,31 +32,38 @@ section {
 }
 
 .image {
-    border: solid 1px red;
     grid-column: 1;
     grid-row: 1/3;
 }
 
 .image2 {
+    background-color: #70BBE0;
     grid-column: 2;
     grid-row: 1/3;
+    margin-left: 50px;
+    padding-bottom: 10px;
 }
 
 .titre1 {
+    background-color: #70BBE0;
     font-size: 28px;
     color: orange;
+    text-align: center;
     grid-column: 2;
     grid-row: 1;
 }
 
 .titre2 {
+    background-color: #70BBE0;
     font-size: 28px;
     color: orange;
+    text-align: center;
     grid-column: 1;
     grid-row: 1;
 }
 
 .paragraphe1 {
+    background-color: #70BBE0;
     margin-top: -5px;
     font-size: 15px;
     grid-column: 2;
@@ -61,6 +71,7 @@ section {
 }
 
 .paragraphe2 {
+    background-color: #70BBE0;
     margin-top: -5px;
     font-size: 15px;
     grid-column: 1;
@@ -68,6 +79,7 @@ section {
 }
 
 a {
+    background-color: #70BBE0;
     font-style: italic;
     text-decoration: none;
     color: black;

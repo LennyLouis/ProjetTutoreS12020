@@ -1,0 +1,39 @@
+footer {
+    background-color: var(--header-footer-bg-color);
+}
+
+footer .container.containerFooter {
+    display: grid;
+    grid-template-columns: 40% 10% 25% 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer .txt {
+    grid-column-start: 1;
+}
+
+footer .img1 {
+    grid-column-start: 3;
+}
+
+footer .img2 {
+    grid-column-start: 4;
+}
+
+footer img {
+    height: 100px;
+}
+
+footer .author {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 3px solid #ecf0f1;
+    border-radius: 25px;
+    overflow: visible;
+    height: 5px;
+}

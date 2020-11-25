@@ -2,18 +2,213 @@ body {
     font-family: 'Open Sans';
     text-align: justify;
     background-color: rgb(192, 223, 239);
-}
-
-.objet {
-	background-color: #ADCAD9;
-	margin-left: 12%;
+    margin-left: 12%;
 	margin-right: 12%;
 }
-img{
-	width: 30%;
-    height: 30%;
+ nav{
+	width: 100%;
+	background-color:#96A9F0;
+	border-radius: 10px;
+	margin-bottom: 20px;
 }
-.Titre{
-	text-align: center;
+ nav ul{
+	margin: 0px;
+	padding: 0px; 
+	overflow: hidden;
+}
+ nav li{
+	list-style-type: none;
+	float: left;
+
+}
+nav a{
+	display: inline-block;
+	text-decoration: none;
+	padding: 20px 25px;
+	color: #FFF;
+}
+a:hover{
+
+	background-color: rgba(105, 108, 181, 71);
+    border-radius: 25px;
+    
+}
+* {
+  scroll-behavior: smooth;
+}
+.objet {
+	background-color: #ADCAD9;
+	margin-right: auto;
+	margin-left: auto;
+	display: grid;
+	width:850px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 20px;
+	grid-row-gap: 0px;
+	margin-top: 50px; 
+	padding-right: 10px;
+	padding-left: 10px;
+	border-radius: 10px;
+}
+
+/*........................................................CUILLERE ANTI-TREMBLEMENT......................................................;*/
+
+.Titre1{
 	font-size: 25px;
+	grid-column : 1/3;
+	grid-row : 1;
+	text-align: center;
+}
+.paragraphe1 {
+	grid-column : 2;
+	grid-row: 2; 
+}
+.image1{ 
+	
+	border-radius: 10px;
+	grid-column: 1;
+	grid-row: 2/3; 
+	width: 410px;
+	height: 220px;
+	margin-top: 20px; 	
+}
+/*..........................................................Tobii PC Eye 5...........................................................*/
+
+.Titre2{
+	font-size: 25px;
+	grid-column : 1/3;
+	grid-row : 1;
+	text-align: center;
+	
+}
+.paragraphe2 {
+	grid-column : 1;
+	grid-row: 2/3; 
+}
+.image2{ 
+	
+	border-radius: 10px;
+	grid-column: 2;
+	grid-row: 2/3; 
+	width: 455px;
+	height: 215px;
+	margin-top: 20px;
+}
+
+/*..........................................................LEKA...........................................................*/
+
+.Titre3{
+	font-size: 25px;
+	grid-column : 1/3;
+	grid-row : 1;
+	text-align: center;
+	
+}
+.paragraphe3 {
+	grid-column : 2;
+	grid-row: 2/3; 
+}
+.image3{ 
+	
+	border-radius: 10px;
+	grid-column: 1;
+	grid-row: 2/3; 
+	width: 300px;
+	height: 300px;
+	margin-top: 20px;
+}
+/*..........................................................texte entre objet et logiciel...........................................................*/
+.logiciel{
+	font-size: 25px;
+	text-align: center;
+}
+
+/*..........................................................SteadyMouse2...........................................................*/
+
+.Titre4{
+	font-size: 25px;
+	grid-column : 1/3;
+	grid-row : 1;
+	text-align: center;
+	
+}
+.paragraphe4 {
+	grid-column : 1;
+	grid-row: 2/3; 
+	margin-left: 10px
+}
+.image4{ 
+	
+	border-radius: 10px;
+	grid-column: 2;
+	grid-row: 2/3; 
+	width: 345px;
+	height: 220px;
+	margin-top: 10px;
+	margin-left: 30px;
+	
+}
+
+
+/*..........................................................FACIL'iti...........................................................*/
+.Titre5{
+	font-size: 25px;
+	grid-column : 1/3;
+	grid-row : 1;
+	text-align: center;
+	
+}
+.paragraphe5 {
+	grid-column : 2;
+	grid-row: 2/3; 
+}
+.image5{ 
+	
+	border-radius: 10px;
+	grid-column: 1;
+	grid-row: 2/3; 
+	width: 427px;
+	height: 265px;
+	margin-top: 20px;
+}
+
+
+footer {
+    background-color: #96A9F0;
+}
+
+footer .container.containerFooter {
+    display: grid;
+    grid-template-columns: 40% 10% 25% 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer .txt {
+    grid-column-start: 1;
+}
+
+footer .img1 {
+    grid-column-start: 3;
+}
+
+footer .img2 {
+    grid-column-start: 4;
+}
+
+footer img {
+    height: 100px;
+}
+
+footer .author{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 3px solid #ecf0f1;
+    border-radius: 25px;
+    overflow: visible;
+    height: 5px;
 }

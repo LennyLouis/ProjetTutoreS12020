@@ -1,16 +1,32 @@
 * {
     font-family: 'Open Sans';
-    margin: 0;
-    padding: 0;
-    color: #ecf0f1;
     text-align: justify;
+    background-color: rgb(192, 223, 239);
+}
+
+.objet {
+	background-color: #ADCAD9;
+	margin-left: 12%;
+	margin-right: 12%;
+}
+img{
+  width: 30%;
+  height: 30%;
+}
+.Titre{
+	text-align: center;
+	font-size: 25px;
+  margin: 0;
+  padding: 0;
+  color: #ecf0f1;
+  text-align: justify;
 }
 
 header{
-    background-color: #27ae60;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
+  background-color: #27ae60;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
 }
 
 nav {

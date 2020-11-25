@@ -172,4 +172,20 @@ footer {
 footer .container{
     padding-top: 20px;
     padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 40% 10% 25% 25%;
+}
+
+footer .txt {
+    grid-column-start: 1;
+}
+
+footer .img1 {
+    grid-column-start: 3;
+}
+footer .img2 {
+    grid-column-start: 4;
+}
+footer img {
+    height: 100px;
 }

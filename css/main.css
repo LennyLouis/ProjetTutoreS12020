@@ -22,6 +22,10 @@ section {
     margin-right: auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 .grille {
     padding-left: 10px;
     padding-right: 10px;
@@ -95,16 +99,6 @@ section {
 .lien2 {
     grid-row: 2;
     grid-column: 1;
-}
-
-a {
-    font-style: italic;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-    color: goldenrod;
 }
 
 .objet {

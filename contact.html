@@ -27,10 +27,45 @@
         <!-- contenue de la page -->
         <section>
             <h1 class="titre1"> Qui sommes nous ? </h1>
-            <p> Nous sommes des étudiants à l'IUT de Laval dans le Departement Informatique et nous avons conçu ce site internet dans la cadre de notre Projet Tutoré. Il a pour thème, l'informatique dans les handicaps.</p>
-            <h2> Petite Presentation </h2>
-            <p> Lenny, je suis un étudiant de 18 ans, à l'IUT informatique de Laval. Je me suis occupé de réaliser notre magnifique page d'accueil, ainsi que une autre page. </p>
+            <p> Nous sommes 3 étudiants à l'IUT de Laval dans le Departement Informatique et nous avons conçu ce site internet dans la cadre de notre Projet Tutoré. Il a pour thème, l'informatique dans les handicaps. Plus precisement, notre site et poster,
+                que vous pouvez retrouver en <a href="poster.html" class="lien1"> cliquant ici, </a> sont sur les handicaps cognitifs</p>
+            <div class="grille3">
+                <h2> Petite Presentation </h2>
+                <img src="" alt="Image de Lenny" class="image">
+                <p> Lenny, je suis un étudiant de 18 ans, à l'IUT informatique de Laval. Je me suis occupé de réaliser notre magnifique page d'accueil, ainsi que une autre page. </p>
+                <img src="" alt="Image de Mael" class="image2">
+                <p> Mael, je suis un étudiant de 18 ans, aussi à l'IUT informatique de Laval. Je me suis occupé de la page d'aide et de </p>
+                <img src="" alt="Image de Vincent" class="image3">
+                <p> Vincent, je suis un étudiant de 17 ans, etudiant en filiere informatique à l'IUT de Laval. Pour ma part, j'ai réalisé la page d'explication de l'informatique et des limites de celle-ci ainsi que cette page que vous lisez, si vous êtes
+                    arrivé jusque là</p>
+            </div>
         </section>
+
+        <section>
+
+        </section>
+
+        <section>
+            <p> Si vous souhaitez nous contacter pour des raisons, je vous laisse nous envoyer un mail ici : <span class="gras"> cellule.handicap.laval@gmail.com </span> ou en remplissant le formulaire ci-dessous</p>
+            <form method="post" action="reponse.php" class="formu">
+                <p class="nom">
+                    <label for="Nom"> <b> Nom </b> (requis) </br> </label>
+                    <input type="text" name="nom" placeholder="Ex : Lenny" required size="50" maxlength="30">
+                </p>
+                <p class="mail">
+                    <label for="mail"> <b> Adresse-mail </b> (requis) </br> </label>
+                    <input type="text" name="mail" placeholder="Ex : exemple@gmail.com" required size="50" maxlength="50">
+                </p>
+                <p class="message">
+                    <label for="message"> <b> Message </b> (requis) </br></label>
+                    <textarea type="text" name="message" required rows="10" cols="100"> </textarea>
+                </p>
+                <p>
+                    <input type="submit" value="Envoyer" />
+                </p>
+            </form>
+        </section>
+
 
 
     </main>

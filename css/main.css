@@ -1,9 +1,18 @@
+:root {
+    --main-text-color: #ecf0f1;
+    --hr-color: #ecf0f1;
+    --header-footer-bg-color: #27ae60;
+    --nav-text-color-hover: #19773f;
+    --container-text-color: black;
+}
+
 * {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', serif;
     margin: 0;
     padding: 0;
-    color: #ecf0f1;
+    color: var(--main-text-color);
     text-align: justify;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -117,10 +126,10 @@ a {
 }
 
 header{
-  background-color: #27ae60;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
+    background-color: var(--header-footer-bg-color);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
 }
 
 nav {
@@ -132,45 +141,99 @@ nav {
 nav ul, nav li {
     display: inline;
     list-style: none;
+    padding: 5px 5px;
 }
 
 nav a {
     text-decoration: none;
+    background-color: transparent;
     color: inherit;
     font-weight: bold;
-    padding: 15px 15px;
+    padding: 10px 10px;
     transition: 0.5s;
 }
 
 nav a:hover {
-    color: #19773f;
-    border-radius: 25px;
-    background-color: transparent;
-}
-.titre-site{
-    padding: 20px 20px;
-    text-align: center;
-    background-color: #27ae60;
+    color: var(--nav-text-color-hover);
+    transition: 0s;
+    border-bottom: 2.5px solid var(--nav-text-color-hover);
 }
 
-.container {
-    display: flex;
-    margin: 0 auto;
-    width: 80%;
+.active{
+    color: var(--nav-text-color-hover);
+    border-bottom: 2.5px solid var(--nav-text-color-hover);
 }
+.active:hover{
+    color: var(--main-text-color);
+    border-bottom: 2.5px solid var(--main-text-color);
+}
+
+section .article {
+    display: grid;
+}
+
+section .article1 p{
+
+}
+.pre-header{
+    background-color: var(--header-footer-bg-color);
+}
+.titre-site{
+    background-color: var(--header-footer-bg-color);
+    width: 70%;
+    margin: auto;
+    display: flex;
+    padding: 20px 20px;
+}
+
+.titre-site img {
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.titre-site h1 {
+    align-self: center;
+    font-family: 'Caveat', sans-serif;
+    padding-left: 10px;
+ }
+
+.container {
+    display: grid;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.article1.container{
+    display: flex;
+}
+
+main > .article1 {
+    background-image: url("/ProjetTutore/img/people-motion-walk-asia-professional-together.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+main section .article1{
+    align-self: center;
+    align-items: center;
+}
+
 .container * {
-    color: black;
+    color: var(--container-text-color);
 }
 
 footer {
-    background-color: #27ae60;
+    background-color: var(--header-footer-bg-color);
 }
 
-footer .container{
-    padding-top: 20px;
-    padding-bottom: 20px;
+footer .container.containerFooter {
     display: grid;
     grid-template-columns: 40% 10% 25% 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 footer .txt {
@@ -180,9 +243,28 @@ footer .txt {
 footer .img1 {
     grid-column-start: 3;
 }
+
 footer .img2 {
+    margin: auto;
     grid-column-start: 4;
 }
+
 footer img {
+    margin: auto;
     height: 100px;
+    cursor: pointer;
+}
+
+footer .author{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+hr {
+    border: none;
+    border: 1px solid var(--hr-color);
+    border-radius: 25px;
+    overflow: visible;
+    height: 0px;
+    margin: 5px 5px;
 }

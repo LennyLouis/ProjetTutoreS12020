@@ -2,32 +2,56 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Titre du site</title>
+    <title>InfoCap</title>
     <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
 </head>
 <body>
+
+    <div class="pre-header">
+        <div class="titre-site">
+            <img src="img/logo.svg" alt="Logo InfoDicap, un cerveau">
+            <h1>InfoDicap</h1>
+        </div>
+    </div>
     <header>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Accueil</a></li>
+                <li><a href="informatique.html">Qu'est-ce que c'est ?</a></li>
+                <li><a href="associations.html">Associations spécialisés</a></li>
+                <li><a href="logicielsaide.html">Logiciels d'aide</a></li>
+                <li><a href="apropos.html">A propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <nav>
-        <ul>
-            <li>Accueil</li>
-            <li>Associations spécialisés</li>
-            <li>Logiciels d'aide</li>
-            <li>A propos</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
 
     <main>
-        <!-- contenue de la page -->
-    </main>
+        <div class="article1">
+            <div class="container">
+                <section class="article article1">
+                    <h1>Bienvenue sur notre magnifique site !</h1>
+                    <p>Ici vous pourrez trouver un tas d'info sur les handicaps cognitif !</p>
+                </section>
+            </div>
+        </div>
     
     <footer>
-        <hr>
-        <p>Bas de page</p>
+        <div class="container containerFooter">
+            <div class="txt">
+                <h3>&Agrave; propos</h3>
+                <p>Site web réalisé dans le cadre d'un projet universitaire de première année sur le thême de l'informatique au seins des handicaps</p>
+            </div>
+            <img class="img1" src="img/logo_IUT_LAVAL_RVB.png" alt="Logo IUT de Laval" onclick="window.open('http://iut-laval.univ-lemans.fr/fr/');">
+            <img class="img2" src="img/logo_LEMANS_UNIVERSITE_RVB.png" alt="Logo Université Le Mans" onclick="window.open('http://www.univ-lemans.fr/fr/');">
+        </div>
+        <div class="container">
+            <hr>
+            <p class="author">Site web réalisé par le Groupe 2 - <a href="http://iut-laval.univ-lemans.fr/fr/index.html">IUT de Laval</a>, département Informatique - 2020</p>
+        </div>
     </footer>
 </body>
 </html>

@@ -8,7 +8,7 @@ body {
 .intro{
 	text-align: center;
 }
- nav{
+.menugauche{
 	width: 15%;
 	background-color:#96A9F0;
 	border-radius: 10px;
@@ -18,21 +18,21 @@ body {
 	margin-right: 0px; 
 	float: left; 
 }
- nav ul{
+ .menugauche ul {
 	margin: 0px;
 	padding: 0px; 
 	overflow: hidden;
 }
- nav li{
+ .menugauche li{
  	list-style-type: none;
 }
-nav a{
+.menugauche a{
 	display: block;
 	text-decoration: none;
 	padding: 20px 25px;
 	color: #FFF;
 }
-a:hover{
+.menugauche a:hover{
 
 	background-color: rgba(105, 108, 181, 71);
     border-radius: 25px;
@@ -199,13 +199,13 @@ h1{
 	grid-column : 1/3;
 	grid-row : 1;
 	text-align: center;
+	color: black;
+	text-decoration: none;
 }
-.asso2{
-	font-size: 25px;
-	grid-column : 1/3;
-	grid-row : 1;
-	text-align: center;
+.asso a:hover{
+	text-decoration: underline;
 }
+
 .imgasso{
 	grid-column: 1;
 	grid-row: 2/3; 
@@ -217,13 +217,14 @@ h1{
 .imgcoridys{
 	grid-column: 1;
 	grid-row: 2/3; 
-	margin-left: 50px;
+	margin-top: 60px;
+	width: 436px;
+	height: 183px;
 }
-
-
-
-
-
+.lien{
+	color: blue;
+	text-decoration: none;
+}
 
 footer {
     background-color: #96A9F0;

@@ -1,0 +1,4 @@
+AuthName "Réponses formulaire, accès restreint"
+AuthType Basic
+AuthUserFile "/var/www/infodicap/form/.htpasswd"
+Require valid-user

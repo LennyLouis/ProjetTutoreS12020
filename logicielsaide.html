@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dev.laciteperdue.fr/img/logo-round.png">
+    <meta property="og:site_name" content="InfoDicap - L'informatique au chevet des handicaps cognitifs">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://dev.laciteperdue.fr/img/logo-square.png">
+
+    <meta name="twitter:title" content="InfoDicap - L'informatique au chevet des handicaps cognitifs">
+    <meta property="og:title" content="InfoDicap - L'informatique au chevet des handicaps cognitifs">
+
+    <meta property="og:description" content="InfoDicap est un site web réalisé par un groupe de 3 étudiants lors d'un projet se déroulant en première année de DUT Informatique à l'IUT de Laval.">
+    <meta name="description" content="InfoDicap est un site web réalisé par un groupe de 3 étudiants lors d'un projet se déroulant en première année de DUT Informatique à l'IUT de Laval.">
+    <meta name="twitter:description" content="InfoDicap est un site web réalisé par un groupe de 3 étudiants lors d'un projet se déroulant en première année de DUT Informatique à l'IUT de Laval.">
+
+    <meta name="author" content="Lenny LOUIS, Vincent DIRIBARNE, Mael LE ROUX">
+
+    <title>InfoDicap - Logiciels d'aide</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/logo/logo.svg" type="image/x-icon">
+</head>
+<body onload="openMenu(this)">
+
+    <header>
+        <div>
+            <div class="burger" onclick="openMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <a href="/">
+                <img src="/img/logo/logo.svg" id="logoSite" alt="Logo InfoDicap : un cerveau">
+                <span class="header__title">InfoDicap</span>
+            </a>
+            <div>
+                <div onclick="accessibilite();" class="acessbtn">Accessibilité</div>
+                <ul class="sous">
+                    <li style="cursor: pointer" onclick="accessibilite();">Normal</li>
+                    <li style="cursor: pointer" onclick="accessibilite(0);">Zoom</li>
+                    <li style="cursor: pointer" onclick="accessibilite(1);">Couleur</li>
+                    <li style="cursor: pointer" onclick="accessibilite(2);">Zoom & Couleur</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="/index.html">Accueil</a></li>
+            <li><a href="/informatique.html">Qu'est-ce que c'est ?</a></li>
+            <li><a href="/associations.html">Associations spécialisés</a></li>
+            <li><a class="active" href="/logicielsaide.html">Logiciels d'aide</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <div class="menudufutur">
+            <nav class="menugauche">
+                <ul>
+                    <li><h2>Objets : </h2></li>
+                    <li><a href="#section1">Cuillère anti-tremblement</a></li>
+                    <li><a href="#section2">Tobii PC Eye 5</a></li>
+                    <li><a href="#section3">Leka</a></li>
+                    <li><h2>Logiciels : </h2></li>
+                    <li><a href="#section4">Steadymouse2</a></li>
+                    <li><a href="#section5">FACIL'iti</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <section class="titrepage">
+                <h1 class="grandtitre">Logiciels d'aides</h1>
+            </section>
+            <section class="text">
+                <p>Dans cette rubrique, nous allons voir plusieurs objets et logiciels permettant un confort dans l'outil informatique. Bien sur, nous traitons ici proncipalement des personnes atteintes de maladie cognitives cependant certains objets ou logiciels
+                    peuvent évidemment être adaptés aux personnes atteintes d'une autre déficiences physiques. Nous avons selectionné ses aides pour leur grande utilité pour les personnes atteintes de handicaps. En effet, il en existe des milliers, il est
+                    donc nécessaire de choisir l'outil le plus adapté.
+                </p>
+            </section>
+            <section class="blockpage">
+                    <h2 class="r1 c1 ce4">Google X : Une cuillère anti-tremblement contre la maladie </h2>
+                    <img class="r2 c1" src="img/cuillere.jpg" alt="Une cuillère" class="image1">
+                    <p class="r2 c3">Et non ce n'est pas une cuillère pour les bébés... Comme vous l'avez vu cette cuillère est destiné aux personnes atteintes de Parkinson. Elle permetterait à ces dernier de facilité leur quotidiens. Imaginez que vous voulez prendre une soupe pour le diner, cependant avec votre handicap vous n'arrivez pas à boir la soupe sans en mettre a côté. Et bien... cette cuillère est la solution elle permet de réduire enormément le tremblement devos main. Cette objet permet de faciliter la vie de million de personne et de leur redonné goût aux repas. </p>
+            </section>
+
+
+            <section class="blockpage">
+                    <h2 class="r1 c1 ce4"> Tobii PC Eye 5 : Vos yeux prennent le contrôle</h2>
+                    <img class="r2 c3" src="img/pceyes.jpg" alt="image de l'objet" class="image2">
+                    <p class="r2 c1">Bien que cette objet peut faire une belle décoration sur votre bureau, il en est tout aussi pratique. Le tobii pc eyes 5 va permettre de controler les outils informatique avec les yeux. Malgrè son prix de 1399€, cette outil peut s'adapter à plusieurs pathologie comme la Tétraplégie, pathologie neurologique évolutive, etc... Un outil donc bien pratique pour remplacer la souris et de donner un accès simple à l'informatique.</p>
+            </section>
+
+
+
+            <section class="blockpage">
+                    <h2 class="r1 c1 ce4">Un petit robot du nom de Leka</h2>
+                    <img class="r2 c1" src="img/robot_leka.jpg" alt="image du robot" class="image3">
+                    <p class="r2 c3">Ce petit robot interractif, et tout mignon, permettant aux enfants atteint de l'autisme d'apprendre et de progresser tout en s'amusant. Conçu par de jeune francais, ce robot ,doué d'intelligence artificielle, va repondre à l'interraction de l'enfant avec différent comportement autonomes par exemple si le robot et jeté par terre il va faire un visage triste et devenir rouge. L'avantage c'est qu'avec de nombreuse application enrichie tous les mois, il va permettre à l'enfant de travailler des compétences ciblées, comme les interactions sociales et les capacités cognitives. Plus largement, Leka éveille la curiosité et encourage l’enfant à rester engagé dans une activité. Ce robot va permettre de devenir un compagnon pour l'enfant. </p>
+            </section>
+
+            <section class="text">
+                <p class="logiciel">Des logiciels comme aide pour les handicaps cognitifs ?</p>
+                <!-- une image  -->
+                <p class="logiciel2">De nos jour, il est plus simple pour les scientifiques et les développeurs à concevoir des logiciels pour aider les personnes atteintes de maladie cognitives. En effet de plus en plus de logiciel  sont crées, nous allons vous montrez ce qui nous ont tapé dans l'oeil: </p>
+            </section>
+
+            <section class="blockpage">
+                <h2 class="r1 c1 ce4">SteadyMouse2 : Pour une souris plus simple</h2>
+                <img class="r2 c3" src="img/steady_mouse2.jpg" alt="logo du logiciel">
+                <p class="r2 c1">Ce premier logiciel va permettre d'accompagner principalement les personnes atteintes vers la maladie de Parkinson <!-- mettre un lien renvoyant vers la def de la maladie comme wikipedia -->. Il consiste tout simplement, une fois activé, à rendre le contrôle de la souris normal sans être parasité par des mouvement involontaire de l'utilisateur. De plus il va permettre une aide de ciblage d'icone afin de permettre a l'utilisateur de lui faciliter la tâche. Toutes les aides sont reglable en fonction du degrès de la maladie pour ajuster la sensibilité de la souris. </p>
+            </section>
+
+            <section class="blockpage">
+                <h2 class="r1 c1 ce4">FACIL'iti : Une extension changeante </h2>
+                <img class="r2 c1" src="img/facil.png" alt="exemple d'utilisation">
+                <p class="r2 c3">Le deuxième logiciel est plutôt une extension web qui va se concentré integralement sur l'affichage d'un site web. Que la personne soit malvoyante, atteinte de Parkinson ou de la dyslexie et bien d'autre forme de problème, cette extension, une fois reglé aux profil de la personne, va changer l'interface du site pour offrir un meilleur confort à l'utilisateur. Comme sur l'image on remarque que pour une personne atteinte de Parkinson, cette extension va permettre d'espacer et d'agrandir les boutons afin de faciliter l'utilisation.  Cependant, le défault de cette extension c'est qu'elle n'est pas gratuite elle prend la forme d'un abonnement mensuel.
+                </p>
+            </section>
+            <section class="text">
+                <p>Pour plus d'information, nous vous recommendons de nous contacter ou de vous rediriger vers un organisme plus professionnel afin de repondre à votre demande : <a href="/associations.html">différentes associations</a> ou <a href="/contact.html">nous contacter</a> </p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container containerFooter">
+            <div class="txt">
+                <h3>&Agrave; propos</h3>
+                <p>Site web réalisé dans le cadre d'un projet universitaire de première année sur le thême de l'informatique au seins des handicaps</p>
+            </div>
+            <img class="img1" src="/img/logo/logo_IUT_LAVAL_RVB.png" alt="Logo IUT de Laval" onclick="window.open('http://iut-laval.univ-lemans.fr/fr/');">
+            <img class="img2" src="/img/logo/logo_LEMANS_UNIVERSITE_RVB.png" alt="Logo Université Le Mans" onclick="window.open('http://www.univ-lemans.fr/fr/');">
+        </div>
+        <div class="container">
+            <hr>
+            <p class="author">Site web réalisé par le Groupe 2 - <a href="http://iut-laval.univ-lemans.fr/fr/index.html" target="_blank">IUT de Laval</a>, département Informatique - 2020</p>
+        </div>
+    </footer>
+</body>
+<script src="./js/script.js"></script>
+</html>

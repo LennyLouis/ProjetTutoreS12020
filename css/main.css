@@ -207,6 +207,13 @@ section.blockpage img {
     margin: auto;
 }
 
+section.blockpage video {
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 section.blockpage h2 {
     text-align: center;
     margin-bottom: 25px;
@@ -358,9 +365,9 @@ footer .author {
     .blockpage .r2 {
         grid-row-start: 2;
     }
-    /* .blockpage .r3 {
-        grid-rox-start: 3;
-    } */
+    .blockpage .r3 {
+        grid-row-start: 3;
+    }
     footer .container.containerFooter {
         grid-template-columns: 40% 10% 25% 25%;
     }

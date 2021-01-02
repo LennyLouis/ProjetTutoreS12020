@@ -204,7 +204,8 @@ section.blockpage {
 section.blockpage img {
     width: 100%;
     border-radius: 25px;
-    margin: auto;
+    padding-bottom: 10px;
+    /* margin: auto; */
 }
 
 section.blockpage video {

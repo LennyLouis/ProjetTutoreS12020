@@ -224,6 +224,11 @@ section.blockpage p {
     margin: auto;
 }
 
+.lienparent {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
 .container a {
     border-radius: 25px;
     font-weight: bold;

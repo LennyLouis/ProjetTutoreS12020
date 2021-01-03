@@ -45,7 +45,7 @@ if(array_key_exists('resetforms', $_GET)) {
     <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
     <link rel="shortcut icon" href="/img/logo/logo.svg" type="image/x-icon">
 </head>
-<body onload="openMenu(this)">
+<body onload="openMenuDefault(this)">
 
     <header>
         <div>
@@ -81,17 +81,16 @@ if(array_key_exists('resetforms', $_GET)) {
 
     <main style="min-height: 40vh;">
         <div class="container">
-            <div id="form-rep">
+            <p class="lienparent"><a href="https://infodicap.fr/">InfoDicap.fr</a> > Réponse(s) formulaire de contact</p>
+            <section id="form-rep" class="blockpage">
                 <?php if(strlen($text)>10): // Si il y a des réponses ?>
-                <div style="display: grid; grid-template-columns: 50% 50%;">
-                    <h1 style="grid-column-start: 1;">Réponses du formulaire :</h1>
-                    <form method="post" style="grid-column-start: 2;">
-                        <input type="submit" name="refresh" class="button" value="Actualiser" />
-                        <input type="button" name="bouton" onclick="deleteFormRep()" class="button" value="Supprimer les réponses" />
-                    </form>
-                </div>
+                <h1 class="r1 c1">Réponses du formulaire :</h1>
+                <form method="post" class="r1 c2" style="margin: auto">
+                    <input type="submit" name="refresh" class="button" value="Actualiser" />
+                    <input type="button" name="bouton" onclick="deleteFormRep()" class="button" value="Supprimer les réponses" />
+                </form>
                 <br>
-                <table>
+                <table class="r2 c1 ce3">
                     <thead>
                         <tr>
                             <th>Nom</th>
@@ -112,9 +111,9 @@ if(array_key_exists('resetforms', $_GET)) {
                     </tbody>
                 </table>
                 <?php else: //Si il n'y a pas de réponses?>
-                <h1>Aucun formulaire n'a été rempli.</h1>
+                <h2>Aucun formulaire n'a été rempli.</h2>
                 <?php endif; ?>
-            </div>
+            </section>
             <br>
         </div>
     </main>
@@ -133,7 +132,7 @@ if(array_key_exists('resetforms', $_GET)) {
         </div>
     </footer>
 </body>
-<script src="./js/script.js"></script>
+<script src="/js/script.js"></script>
 <script>
     function deleteFormRep() {
         let ask = window.confirm("Êtes vous sûr de vouloir supprimer toutes les réponses ?");

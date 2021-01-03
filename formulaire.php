@@ -45,7 +45,7 @@ if(isset($_POST['nom'])&&isset($_POST['mail'])&&isset($_POST['message'])) { // o
     <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
     <link rel="shortcut icon" href="/img/logo/logo.svg" type="image/x-icon">
 </head>
-<body onload="openMenu(this)">
+<body onload="openMenuDefault(this)">
     <header>
         <div>
             <div class="burger" onclick="openMenu(this)">
@@ -80,6 +80,7 @@ if(isset($_POST['nom'])&&isset($_POST['mail'])&&isset($_POST['message'])) { // o
 
     <main style="min-height: 40vh;">
         <div class="container">
+            <p class="lienparent"><a href="/">Accueil</a> > Formulaire</p>
 
             <?php if($_GET['message']=='good'){echo '<h1 style="color:green;margin-top: 10vh;">Votre message a bien été envoyé !</h1>';}
             elseif($_GET['message']=='error'){echo '<h1 style="color:red;margin-top: 10vh;">Une erreur est survenue, merci de contacter l\'administrateur du site.</h1>';}

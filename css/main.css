@@ -38,7 +38,7 @@ nav * {
 
 header {
     background-color: var(--header-footer-bg-color);
-    height: 67px;
+    height: 75px;
 }
 
 header>div,
@@ -74,18 +74,19 @@ header>div>a {
 .header__title {
     font-family: 'Caveat', sans-serif;
     margin-left: 10px;
+    font-size: 170%;
 }
 
 header img {
-    height: 65px;
-    width: 65px;
+    height: 80px;
+    width: 80px;
 }
 
 nav {
     display: none;
     position: absolute;
     background-color: var(--header-footer-bg-color);
-    height: calc(100vh - 66px);
+    height: calc(100vh - 74px);
     width: 300px;
 }
 
@@ -139,6 +140,7 @@ nav>ul>li>a:hover {
 
 .activeMenu {
     display: block;
+    z-index: 5;
 }
 
 .active {
@@ -179,6 +181,10 @@ hr {
     padding-bottom: 25px;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 section.titrepage {
     margin-left: auto;
     margin-right: auto;
@@ -202,15 +208,17 @@ section.blockpage {
 }
 
 section.blockpage img {
-    width: 100%;
+    width: 95%;
     border-radius: 25px;
     padding-bottom: 10px;
-    /* margin: auto; */
+    margin: auto;
 }
 
-section.blockpage video {
-    width: 80%;
-    margin: auto;
+section.blockpage iframe {
+    width: 100%;
+    height: 200px;
+    display:block;
+    margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -221,9 +229,14 @@ section.blockpage h2 {
 }
 
 section.blockpage p {
-    margin: auto;
+    margin: 0 auto;
     padding-right: 5px;
     padding-left: 5px;
+}
+
+.border-bot {
+    padding-bottom: 20px;
+    border-bottom: solid black;
 }
 
 .lienparent {
@@ -244,22 +257,39 @@ section.text {
     margin: 25px auto;
 }
 
-section.text p {
+section.text p, section.text h2 {
     text-align: center;
 }
 
-.blockpage form p {
-    padding-top: 5px;
-    font-weight: bold;
-    font-style: italic;
+.contactus {
+    text-align: center;
+    width: 90%;
+    margin: auto;
 }
 
-input,
-textarea {
-    background-color: rgb(149, 149, 149);
+.contactus form{
+    text-align: left;
+}
+
+.contactus input,
+.contactus textarea {
+    background-color: var(--header-footer-bg-color);
     color: white;
     padding: 5px;
+    border: 2px solid var(--nav-text-color-hover);
     border-radius: 8px;
+    width: 100%;
+}
+
+.contactus *::placeholder{
+    color: black;
+}
+
+.contactus input[type=submit] {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    width: 30%;
 }
 
 table,
@@ -347,6 +377,7 @@ footer .author {
         display: grid;
         padding: 40px;
     }
+
     main .container p {
         font-size: 110%;
     }
@@ -356,6 +387,11 @@ footer .author {
     main .container h1 {
         font-size: 220%;
     }
+    section.blockpage iframe {
+        width: 60%;
+        height: 350px;
+    }
+
     .blockpage .c1 {
         grid-column-start: 1;
     }
@@ -367,6 +403,9 @@ footer .author {
     }
     .blockpage .c4 {
         grid-column-start: 4;
+    }
+    .blockpage .c5 {
+        grid-column-start: 5;
     }
     .blockpage .ce3 {
         grid-column-end: 3;
@@ -386,6 +425,16 @@ footer .author {
     .blockpage .r3 {
         grid-row-start: 3;
     }
+
+    .border-bot {
+        padding-bottom: 0px;
+        border: none;
+    }
+
+    .contactus {
+        width: 50%;
+    }
+
     footer .container.containerFooter {
         grid-template-columns: 40% 10% 25% 25%;
     }

@@ -3,6 +3,15 @@ function openMenu() {
     p.classList.toggle("activeMenu");
 };
 
+function openMenuDefault() {
+    let w = window.innerWidth;
+    if (w>768){
+        openMenu(this);
+    }
+}
+
+
+
 let switcher = 0;
 let doc = document.documentElement.style;
 

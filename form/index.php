@@ -133,7 +133,7 @@ if(array_key_exists('resetforms', $_GET)) {
         </div>
     </footer>
 </body>
-<script src="./js/script.js"></script>
+<script src="/js/script.js"></script>
 <script>
     function deleteFormRep() {
         let ask = window.confirm("Êtes vous sûr de vouloir supprimer toutes les réponses ?");

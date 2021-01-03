@@ -31,38 +31,80 @@
 
 <body>
 
-    <div class="pre-header">
-        <div class="titre-site" onclick="location.href='/'">
-            <img src="/img/logo/logo.svg" id="logoSite" alt="Logo InfoDicap : un cerveau">
-            <h1>InfoDicap</h1>
-        </div>
-        <div class="btn-header">
-            <h1 class="deroulant">
-                <a onclick="accessibilite();">Accessibilité</a>
+    <header>
+        <div>
+            <div class="burger" onclick="openMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <a href="/">
+                <img src="/img/logo/logo.svg" id="logoSite" alt="Logo InfoDicap : un cerveau">
+                <span class="header__title">InfoDicap</span>
+            </a>
+            <div>
+                <div onclick="accessibilite();" class="acessbtn">Accessibilité</div>
                 <ul class="sous">
                     <li style="cursor: pointer" onclick="accessibilite();">Normal</li>
                     <li style="cursor: pointer" onclick="accessibilite(0);">Zoom</li>
                     <li style="cursor: pointer" onclick="accessibilite(1);">Couleur</li>
                     <li style="cursor: pointer" onclick="accessibilite(2);">Zoom & Couleur</li>
                 </ul>
-            </h1>
+            </div>
         </div>
-    </div>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/index.html">Accueil</a></li>
-                <li><a href="/informatique.html">Qu'est-ce que c'est ?</a></li>
-                <li><a href="/associations.html">Associations spécialisés</a></li>
-                <li><a href="/logicielsaide.html">Logiciels d'aide</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="/index.html">Accueil</a></li>
+            <li><a href="/informatique.html">Qu'est-ce que c'est ?</a></li>
+            <li><a href="/associations.html">Associations spécialisés</a></li>
+            <li><a href="/logicielsaide.html">Logiciels d'aide</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li> <a href="/poster.html"> Poster </a></li>
+            <li> <a class="active" href="/sources.html"> Nos Sources </a></li>
+        </ul>
+    </nav>
 
     <main>
         <div class="container">
-            Nos sources:
+            <p class="lienparent"> <a href="/index.html"> Accueil</a> > Nos Sources</a>
+            </p>
+            <section class="blockpage">
+                <h2> Nos sources : </h2>
+                <ul style="list-style: none;">
+                    <li> <a href="https://coridys.fr/handicap-et-compensation/la-notion-de-handicap-cognitif-et-compensations/" target="_blank">Catégorie de handicap cognitif</a></li>
+                    <li> <a href="https://www.crepse.fr/vous-etes-en-situation-de-handicap/les-differents-types-de-handicap.html" target="_blank">Catégorie de handicap cognitif</a></li>
+                    <li> <a href="https://www.cnsa.fr/vous-etes-une-personne-handicapee-ou-un-proche/missions-et-fonctionnement-des-mdph" target="_blank">Définir l'acronyme MDPH</a></li>
+                    <li> <a href="https://handicap.gouv.fr/les-aides-et-les-prestations/maison-departementale-du-handicap/article/maison-departementale-des-personnes-handicapees-mdph" target="_blank">Définir l'acronyme MDPH</a></li>
+                    <li> <a href="https://coridys.fr" target="_blank">Association qui nous as permis de comprendre de manière plus approfondi les DYS</a></li>
+                    <li> <a href="https://www.larousse.fr/dictionnaires/francais/cognitif/17004#locution" target="_blank">Définir le terme de “cognitif”</a> </li>
+                    <li> <a href="https://www.linternaute.fr/dictionnaire/fr/definition/handicap-cognitif/" target="_blank">Définir le terme de “cognitif”</a></li>
+                    <li> <a href="https://www.maxisciences.com/maladie-de-parkinson/google-x-des-cuilleres-anti-tremblement-contre-la-maladie-de-parkinson_art33473.html" target="_blank">Idée de Solution pour le poster</a></li>
+                    <li> <a href="https://www.comptoirdessolutions.org/innovation/liftware-level/" target="_blank">Idée de Solution pour le poster</a></li>
+                    <li> <a href="https://www.adhaplab.fr/applications-objets-connectes-service-de-lautisme/" target="_blank">Idée de Solution pour le poster</a></li>
+                    <li> <a href="https://atelierdesaidants.fr/enfant-handicap-aidant/information-pathologie/autisme-enfant" target="_blank">Compréhension de l’autisme</a></li>
+                    <li> <a href="https://www.autisme.ch/boite-a-outils/materiel-pedagogique" target="_blank">Ressources pédagogique pour les autistes</a></li>
+                    <li> <a href="https://www.apeda.be/comprendre-troubles-dys/les-differents-troubles/" target="_blank">Comprendre les différents type de DYS</a></li>
+                    <li> <a href="https://www.passeportsante.net/fr/Actualites/Dossiers/DossierComplexe.aspx?doc=etre-une-personne-dys-dyslexie-dysorthographie-dysgraphie-dyscalculie-" target="_blank">Comprendre les différents type de DYS</a></li>
+                    <li> <a href="https://blog.ceciaa.com/2020/03/19/choisir-clavier-pour-malvoyant/" target="_blank">Idée de poster clavier pour les malvoyants</a></li>
+                    <li> <a href="https://www.nouvelobs.com/les-internets/20150729.OBS3338/comment-les-aveugles-utilisent-ils-internet.html" target="_blank">Comprendre l’accessibilité des aveugles sur internet</a></li>
+                    <li> <a href="http://jpr-international.fr/produit/steadymouse-2/" target="_blank">Idée pour le poster</a></li>
+                    <li> <a href="https://www.dys-positif.fr/test-dyslexie-comment-savoir-enfant-dyslexique/" target="_blank">Connaissance sur la dyslexie</a></li>
+                    <li> <a href="https://sante.lefigaro.fr/sante/maladie/autisme/quest-ce-que-lautisme" target="_blank">Connaissance sur l’autisme</a></li>
+                    <li> <a href="https://www.cimis.fr/accueil/295-tobii-pc-eye-5.html" target="_blank">Idée de solution pour le site</a></li>
+                    <li> <a href="https://www.handicap-job.com/blog/2016/08/01/jouet-leka-la-robotique-au-service-de-lautisme/" target="_blank">Idée de solution pour le poster (LEKA)</a></li>
+                    <li> <a href="https://www.apf-francehandicap.org/actualite/leka-un-robot-pour-les-enfants-en-situation-de-handicap-21349" target="_blank">Idée de solution pour le poster (LEKA)</a></li>
+                    <li> <a href="https://www.facil-iti.fr/" target="_blank">Idée pour le site et le poster</a></li>
+                    <li> <a href="http://jpr-international.fr/produit/steadymouse-2" target="_blank">Image pour le poster</a></li>
+                    <li> <a href="https://www.handicap-job.com/blog/2016/08/01/jouet-leka-la-robotique-au-service-de-lautisme" target="_blank">Image pour le poster</a></li>
+                    <li> <a href="https://www.canva.com/" target="_blank">Site pour faire le poster</a></li>
+                    <li> <a href="http://iut-laval.univ-lemans.fr/fr/index.htm" target="_blank">Image logo de l’IUT de Laval et de Le Mans Université</a></li>
+                    <li> <a href="https://www.youtube.com/watch?v=b2-Ibb5l9j8" target="_blank">Vidéo pour comprendre le handicap cognitif</a></li>
+                    <li> <a href="https://coridys.fr/">Coridys </a></li>
+                    <li> <a href="https://annuaire.action-sociale.org/MDPH/MDPH-53-Mayenne.html">MDPH de Laval </a></li>
+                    <li><a href="https://forms.gle/WQEchu9VmEPbTzE17 " target="_blank"> Questionnaire sur les handicaps cognitifs  </a></li>
+                </ul>
+            </section>
         </div>
     </main>
     <footer>

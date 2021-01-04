@@ -1,3 +1,5 @@
+Vous pouvez acceder au site hebergé sur https://infodicap.fr/
+
 Sur le site vous aurez besoin à un moment d'un identifiant pour acceder à la page affichant les réponses du formulaire de contact, les identifiants sont :
 user : iutlaval
 password : iutlaval

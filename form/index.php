@@ -23,11 +23,11 @@ if(array_key_exists('resetforms', $_GET)) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://dev.laciteperdue.fr/img/logo/logo-round.png">
+    <meta property="og:image" content="https://infodicap.fr/img/logo/logo-round.png">
     <meta property="og:site_name" content="InfoDicap - L'informatique au chevet des handicaps cognitifs">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="https://dev.laciteperdue.fr/img/logo/logo-square.png">
+    <meta name="twitter:image" content="https://infodicap.fr/img/logo/logo-square.png">
 
     <meta name="twitter:title" content="InfoDicap - L'informatique au chevet des handicaps cognitifs">
     <meta property="og:title" content="InfoDicap - L'informatique au chevet des handicaps cognitifs">
@@ -40,10 +40,10 @@ if(array_key_exists('resetforms', $_GET)) {
 
     <title>InfoDicap - Accueil</title>
 
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
-    <link rel="shortcut icon" href="/img/logo/logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/logo/logo.svg" type="image/x-icon">
 </head>
 <body onload="openMenuDefault(this)">
 
@@ -54,8 +54,8 @@ if(array_key_exists('resetforms', $_GET)) {
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
-            <a href="/">
-                <img src="/img/logo/logo.svg" id="logoSite" alt="Logo InfoDicap : un cerveau">
+            <a href="../">
+                <img src="../img/logo/logo.svg" id="logoSite" alt="Logo InfoDicap : un cerveau">
                 <span class="header__title">InfoDicap</span>
             </a>
             <div>
@@ -71,11 +71,11 @@ if(array_key_exists('resetforms', $_GET)) {
     </header>
     <nav id="navbar">
         <ul>
-            <li><a href="/index.html">Accueil</a></li>
-            <li><a href="/informatique.html">Qu'est-ce que c'est ?</a></li>
-            <li><a href="/associations.html">Associations spécialisés</a></li>
-            <li><a href="/logicielsaide.html">Logiciels d'aide</a></li>
-            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../informatique.html">Qu'est-ce que c'est ?</a></li>
+            <li><a href="../associations.html">Associations spécialisées</a></li>
+            <li><a href="../logicielsaide.html">Logiciels d'aide</a></li>
+            <li><a href="../contact.html">Contact</a></li>
         </ul>
     </nav>
 
@@ -99,7 +99,7 @@ if(array_key_exists('resetforms', $_GET)) {
                             <th>Message</th>
                         </tr>
                     </thead>
-                    <tbody><!-- le array_reverse() permet d'afficher la liste en partant du premier -->
+                    <tbody><!-- le array_reverse() permet d'afficher la liste en partant du dernier formulaire envoyé -->
                         <?php foreach (array_reverse($reponses) as $rep) {print '
                         <tr>
                             <td>'.$rep['nom'].'</td>
@@ -121,29 +121,30 @@ if(array_key_exists('resetforms', $_GET)) {
         <div class="container containerFooter">
             <div class="txt">
                 <h3>&Agrave; propos</h3>
-                <p>Site web réalisé dans le cadre d'un projet universitaire de première année sur le thême de l'informatique au seins des handicaps</p>
+                <p>Site web réalisé dans le cadre d'un projet universitaire de première année sur le thème de l'informatique au sein des handicaps.
+                    <br><a href="sources.html" class="lienfooter">Nos sources</a></p>
             </div>
-            <img class="img1" src="/img/logo/logo_IUT_LAVAL_RVB.png" alt="Logo IUT de Laval" onclick="window.open('http://iut-laval.univ-lemans.fr/fr/');">
-            <img class="img2" src="/img/logo/logo_LEMANS_UNIVERSITE_RVB.png" alt="Logo Université Le Mans" onclick="window.open('http://www.univ-lemans.fr/fr/');">
+            <img class="img1" src="img/logo/logo_IUT_LAVAL_RVB.png" alt="Logo IUT de Laval" onclick="window.open('http://iut-laval.univ-lemans.fr/fr/');">
+            <img class="img2" src="img/logo/logo_LEMANS_UNIVERSITE_RVB.png" alt="Logo Université Le Mans" onclick="window.open('http://www.univ-lemans.fr/fr/');">
         </div>
         <div class="container">
             <hr>
-            <p class="author">Site web réalisé par le Groupe 2 - <a href="http://iut-laval.univ-lemans.fr/fr/index.html">IUT de Laval</a>, département Informatique - 2020</p>
+            <p class="author">Site web réalisé par le Groupe 2 - <a href="http://iut-laval.univ-lemans.fr/fr/index.html" target="_blank" class="lienfooter">IUT de Laval</a>, département Informatique - 2020</p>
         </div>
     </footer>
-</body>
-<script src="/js/script.js"></script>
-<script>
-    function deleteFormRep() {
-        let ask = window.confirm("Êtes vous sûr de vouloir supprimer toutes les réponses ?");
-        let doc = document.getElementById('time');
-        if (ask) {
-            window.location.href = 'index.php?resetforms=1';
-            window.alert("Les réponses ont étés supprimés");
-        } else {
-            alert('Opération annulée !');
+    <script src="js/script.js"></script>
+    <script>
+        function deleteFormRep() {
+            let ask = window.confirm("Êtes vous sûr de vouloir supprimer toutes les réponses ?");
+            let doc = document.getElementById('time');
+            if (ask) {
+                window.location.href = 'index.php?resetforms=1';
+                window.alert("Les réponses ont étés supprimés");
+            } else {
+                alert('Opération annulée !');
+            }
         }
-    }
-</script>
+    </script>
+</body>
 </html>
 
